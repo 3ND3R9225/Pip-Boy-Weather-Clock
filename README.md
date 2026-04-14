@@ -24,6 +24,26 @@ Lilygo 1.64" : https://youtu.be/y4AK9kuxWG8
 
 Cardputer : https://youtu.be/WOr_QTMYXRI
 
+## New board support
+
+### CYD (ESP32-2432S028 / Cheap Yellow Display)
+
+This repo now includes a dedicated PlatformIO environment for CYD in:
+
+`PIO Lilygo 1.64/platformio.ini` → `[env:cyd]`
+
+Build/upload with:
+
+```bash
+cd "PIO Lilygo 1.64"
+pio run -e cyd
+```
+
+Current CYD state:
+- Display output is enabled.
+- Splash screen, GPS tab, and Settings tab placeholders are added.
+- Touch and battery telemetry are left as placeholders for follow-up hardware tuning.
+
 ---
 ## PIO (PlatformIO) Setup
 1. Update the `config.h` file with your own WiFi credentials, Time Zone, API key, and location data.
